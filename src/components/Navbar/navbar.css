@@ -1,0 +1,110 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    z-index: 2;
+
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+
+    position: fixed;
+    width: 100%;
+}
+
+.nav__logo {
+    cursor: pointer;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__links li {
+    padding: 0 1rem;
+    cursor: pointer;
+    text-transform: capitalize;
+    list-style: none;
+}
+
+.nav__links li a {
+    text-decoration: none;
+    position: relative;
+    color: var(--gray-color);
+    transition: color 0.5s ease-in-out;
+}
+.nav__links li a:hover {
+    color: var(--secondary-color);
+}
+
+.nav__links li a::after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    background-color: var(--secondary-color);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav__links li a:hover::after {
+    width: 75%;
+}
+.nav__toggle_button .brightness {
+    cursor: pointer;
+}
+.nav__toggle_button button {
+    background: none;
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 769px) {
+    .nav__toggle_button {
+        gap: 10px;
+    }
+    .nav__links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+     
+
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(4px);
+        -webkit-backdrop-filter: blur(4px);
+    
+
+
+        position: fixed;
+        top: 6vh;
+        width: 300px;
+        height: 100vh;
+        right: -300px;
+        padding-top: 10px;
+
+        transition: all 0.5s ease-in-out;
+    }
+
+    .nav__links li {
+        margin: 15px 0px;
+    }
+
+    .active {
+        right: 0px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .nav__toggle_button button {
+        visibility: hidden;
+    }
+}
