@@ -1,17 +1,24 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./App.css"
 import { Home, About, Skills, Projects, Contact } from "./container"
 import { Navbar } from './components'
 
 const App = () => {
+    // useEffect(()=>{
+    //     document.addEventListener('contextmenu', (e) => {
+    //         e.preventDefault();
+    //       });
+    // },[])
+
+   
     return (
         <>
             <Navbar />
             <Home />
-            <About />
+            {/* <About />
             <Skills />
             <Projects />
-            <Contact />
+            <Contact /> */}
 
             <div>
                 {/* Navbar */}

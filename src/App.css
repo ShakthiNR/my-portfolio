@@ -3,3 +3,35 @@
     justify-content: center;
     align-items: center;
 }
+
+.icon-md {
+    font-size: 25px;
+}
+
+.icon-sm {
+    font-size: 20px;
+}
+.instagram {
+    width: 25px;
+    height: 25px;
+}
+
+#icon-animi {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+#icon-animi:hover {
+    top: -5px;
+  }
+
+
+@media screen and (max-width: 768px) {
+    .mobile-social-icon {
+        font-size: 20px;
+    }
+    .instagram {
+        width: 20px;
+        height: 20px;
+    }
+}
