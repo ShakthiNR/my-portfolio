@@ -5,27 +5,9 @@ import scrollDown from "../../assets/scroll-down.json"
 import { MyImage } from '../../helper/images';
 
 const Home = () => {
-
-  const links = {
-    linkedIn: "https://www.linkedin.com/in/shakthinr",
-    github:"https://github.com/ShakthiNR"
-  }
-
-  const sendMail = () => {
-    window.location = "mailto:shakthinaarayanan@gmail.com";
-  }
-
-
+  
   return (
     <section id="home">
-      {/* <div className='home__social-media-icons'>
-
-      <div className='center' id="icon-animi"><Icons name="github" handleClick={()=> openInNewTab(links.github)}/></div>
-       
-        <div className='center' id="icon-animi"><Icons name="gmail" handleClick={sendMail} /></div>
-        <div className='center' id="icon-animi"><Icons name="linkedIn" handleClick={()=> openInNewTab(links.linkedIn)}/></div>
-        
-      </div> */}
       <div className='home__content' >
         <div> 
           <img src={MyImage} alt="my-image" className='home__content-img' />

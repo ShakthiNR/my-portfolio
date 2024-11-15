@@ -17,10 +17,15 @@ export {
 
 const experience = [
   {
-    _id: 1,
-    year: "2018",
-    company: "Intel Technologies",
-    role: "Automation Engineer (intern)"
+    _id: 4,
+    year: "2023",
+    company: "Solar for schools",
+    role: "Software Development Engineer"
+  },{
+    _id: 3,
+    year: "2021",
+    company: "HCL Technologies",
+    role: "Software Engineer"
   },
   {
     _id: 2,
@@ -28,16 +33,11 @@ const experience = [
     company: "App Dev Zone",
     role: "Founder"
   },
+  
   {
-    _id: 3,
-    year: "2021",
-    company: "HCL Technologies",
-    role: "Software Engineer"
-  },
-  {
-    _id: 4,
-    year: "2023",
-    company: "Solar for schools",
-    role: "Software Development Engineer"
+    _id: 1,
+    year: "2018",
+    company: "Intel Technologies",
+    role: "Automation Engineer (intern)"
   }
 ]

@@ -1,5 +1,6 @@
 #about {
     padding-top: 4rem;
+
 }
 
 .about__header {
@@ -50,6 +51,8 @@
     .about__wrapper-left {
         flex: 0 0 55vw;
         text-align: justify;
+   
+ 
        
         align-self: self-start;
         span:nth-child(1) {
@@ -60,6 +63,7 @@
             color: #1877F2;
             font-weight: 500;
         }
+        
     }
     .about__wrapper-right {
         flex: 1;
@@ -116,5 +120,6 @@
 
     .expertise .card {
         padding: 0rem;
+        padding-bottom:1rem ;
     }
 }

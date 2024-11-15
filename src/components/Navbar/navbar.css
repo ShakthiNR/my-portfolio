@@ -114,7 +114,7 @@ nav {
 
     .active {
         right: 0px;
-        background-color: rgba(255, 255, 255, 0.7);
+        background-color: rgba(255, 255, 255, 0.9);
         -webkit-backdrop-filter: blur(5px);
         backdrop-filter: blur(5px);
         transition: all 0.65s ease-in-out;
