@@ -1,0 +1,120 @@
+#about {
+    padding-top: 4rem;
+}
+
+.about__header {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.expertise {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+ //   background-color: rebeccapurple;
+    padding: 2rem;
+    p{
+        text-align: center;
+    }
+
+    .card {
+      
+        color: #2f1c6a;
+        background-color: rgb(244, 245, 255, 0.65);
+        border-radius: 20px;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    .card:hover {
+        background-color: #f4f5ff;
+    }
+  
+   
+    img {
+        object-fit: contain;
+        width: 300px;
+        height: 200px;
+    }
+
+}
+
+.about__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin: 0 auto;
+    .about__wrapper-left {
+        flex: 0 0 55vw;
+        text-align: justify;
+       
+        align-self: self-start;
+        span:nth-child(1) {
+        color: rgba(123, 34, 236, 0.9);
+        font-weight: 500;
+        }
+        span:nth-child(2) {
+            color: #1877F2;
+            font-weight: 500;
+        }
+    }
+    .about__wrapper-right {
+        flex: 1;
+    
+        padding-left: 3rem;
+        p {
+            display: none;
+        }
+        .expr__timeline {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1.75rem;
+            .expr__timeline-year {
+                color: var(--secondary-color);
+                font-weight: 500;
+                opacity: 0.9;
+            }
+            .expr__timeline-role {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                div:nth-child(2){
+                    color: var(--gray-color);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (width <= 800px) {
+   
+    .about__wrapper {
+        width: 85vw;
+        flex-direction: column;
+        .about__wrapper-left {
+            flex: 1;
+            padding-bottom: 2rem;
+        }
+        .about__wrapper-right {
+            width: 100%;
+            padding-left: 0rem;
+            p {
+                font-weight: 500;
+                margin: 1rem 0rem;
+                display: block;
+            }
+        }
+    }
+    .expertise {
+        flex-direction: column;
+        gap: 2rem;
+      
+    }
+
+    .expertise .card {
+        padding: 0rem;
+    }
+}

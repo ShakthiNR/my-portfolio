@@ -24,7 +24,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-  
 }
 
 .nav__links li {
@@ -83,40 +82,55 @@ nav {
         gap: 10px;
     }
 
+    .nav__links li a::after {
+        height: 0px;
+    }
+
     .nav__links {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
-
-
-        background-color: rgba(255, 255, 255, 0.7);
-        -webkit-backdrop-filter: blur(5px);
-        backdrop-filter: blur(5px);
-
-
+        
         position: fixed;
-        top: 3.9rem;
+        top: 4.1rem;
         width: 300px;
         height: 100vh;
         right: -300px;
         padding-top: 10px;
 
         transition: all 0.5s ease-in-out;
+        background-color: #f6f6f6
+
     }
 
     .nav__links li {
         margin: 15px 0px;
     }
 
+    /* .nav__links li a {
+        font-weight: 500
+    } */
+
     .active {
         right: 0px;
+        background-color: rgba(255, 255, 255, 0.7);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(5px);
+        transition: all 0.65s ease-in-out;
     }
+   
 }
 
 @media screen and (min-width: 769px) {
     .nav__toggle_button button {
         visibility: hidden;
+    }
+}
+
+@media screen and (width <= 400px) {
+    .nav__links {
+        width: 250px;
     }
 }
 

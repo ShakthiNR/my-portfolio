@@ -21,7 +21,7 @@ const Navbar = () => {
         path.style["animation-delay"] = `${i * delay}s`;
       }
     }
-    setTextAnimation(0.3, 2.2, 2, 'ease-in-out', '#505a8b', false);
+    setTextAnimation(0.95, 2.2, 2, 'ease-in-out', '#505a8b', false);
   }, [])
 
 

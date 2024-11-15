@@ -7,8 +7,8 @@ import { Gmail } from "./images";
 export const Icons = ({ name, handleClick }) => {
 
     const icons = {
-        menu: <HiMenuAlt2 className="icon-md" />,
-        close: <HiX className="icon-md" />,
+        menu: <HiMenuAlt2 className="icon-md menubar" />,
+        close: <HiX className="icon-md menubar" />,
         showBrightness: <FiSun className="icon-sm"  />,
         hideBrightness: <FaRegMoon className="icon-sm" />,
         linkedIn: <FaLinkedin className="icon-md mobile-social-icon"  color="#0077B5" onClick={handleClick}/>,
